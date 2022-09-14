@@ -7,7 +7,7 @@
 # 
 
 def make_snippet(str)
-  arr = str.split()
-  return str if arr.length < 5
-  return "#{arr.first(5).join(" ")}..."
+  str_arr = str.split()
+  return str if str_arr.length < 5
+  return "#{str_arr.first(5).join(" ")}..."
 end

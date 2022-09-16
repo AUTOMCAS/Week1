@@ -41,8 +41,7 @@ class DiaryEntry
 
   def reading_chunk(wpm, minutes)
     words_per_chunk = wpm * minutes
-    @chunk_called_before == false
-
+ 
     if @chunk_called_before == false
       @first_chunk = words_per_chunk
       @chunk_called_before = true
